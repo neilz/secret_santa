@@ -65,7 +65,7 @@ if __name__ == "__main__":
         print "Running Secret Santa..."
         notify_santas(assignments)
     elif sys.argv[1] == "test_run":
-        print "Running Secret Santa..."
+        print "Running Secret Santa test..."
         print_assignments(assignments)
     elif sys.argv[1] == "test_sms":
         print "Sending test SMS message to %s ..." % twilio_conf['test_number']

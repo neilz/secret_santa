@@ -7,7 +7,6 @@ def assign_santas(santas_conf):
     for s in santas:
         assignments[s]['assignee'] = None
     assignments = assign(assignments)
-    print assignments
     return assignments
 
 
@@ -38,20 +37,17 @@ def get_unassigned(assignments):
     for s in santas:
         if not s in assigned:
             unassigned.append(s)
-    print assigned
     return unassigned
 
 
 def assign(assignments, last_assigned=None):
     if is_complete(assignments):
-        print "Assigning complete"
         return assignments
 
     for (key, value) in assignments.iteritems():
         santa = value
         if value['assignee']:
             continue
-        print key
         unassigned = get_unassigned(assignments)
         shuffle(unassigned)
         for u in unassigned:
