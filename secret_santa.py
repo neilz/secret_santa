@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
     if sys.argv[1] == "run":
         print "Running Secret Santa..."
-        notify_santas(assignments)
+        notify_santas(twilio_conf, assignments)
     elif sys.argv[1] == "test_run":
         print "Running Secret Santa test..."
         print_assignments(assignments)

@@ -17,6 +17,7 @@ def test_sms(twilio_conf):
 def notify_santas(twilio_conf, assignments):
     client = TwilioRestClient(twilio_conf["sid"], twilio_conf["token"])
     for santa in assignments.keys():
+        print "Alerting %s (%s)" % (santa, assignments[santa]["phone"])
         client.messages.create(
         	to=assignments[santa]["phone"],
         	from_=twilio_conf["from_number"],
