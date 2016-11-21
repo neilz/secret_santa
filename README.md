@@ -11,4 +11,4 @@ This will send a test SMS message to the test number spcifide in **twilio.yml**
 
 ## Configuration
 * **santas.yml** is used to configure contact info for santas and to specify constraints on who cannot be assigned to each other
-* **santas.yml** is used to configure Twilio SMS parameters
+* **twilio.yml** is used to configure Twilio SMS parameters
