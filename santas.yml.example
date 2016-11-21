@@ -1,0 +1,15 @@
+santas:
+  Person 1:
+    phone: +12345678901
+    blacklist:
+      - Person 2
+  Person 2:
+    phone: +12345678902
+    blacklist:
+      - Person 1
+  Person 3:
+    phone: +12345678903
+    blacklist: []
+  Person 4:
+    phone: +12345678904
+    blacklist: []

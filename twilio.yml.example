@@ -1,0 +1,5 @@
+twilio:
+  sid: MY_SID
+  token: MY_SECURE_TOKEN
+  from_number: "+12345678900"
+  test_number: "+12345678900"
